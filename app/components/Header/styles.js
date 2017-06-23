@@ -9,13 +9,17 @@ export default EStyleSheet.create({
     '@media ios': {
       paddingTop: 20,
     },
+    flexDirection: 'row',
   },
   button: {
-    alignSelf: 'flex-end',
+    flex: 1,
     paddingVertical: 5,
     paddingHorizontal: 20,
   },
   icon: {
     width: 18,
+  },
+  buttonRight: {
+    alignItems: 'flex-end',
   },
 });
