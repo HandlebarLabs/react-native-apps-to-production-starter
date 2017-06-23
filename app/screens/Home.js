@@ -68,6 +68,14 @@ class Home extends Component {
     this.props.navigation.navigate('Options');
   };
 
+  handleDisconnectedPress = () => {
+    this.props.alertWithType(
+      'warn',
+      'Not connected to the internet!',
+      "Just a heads up that you're not connected to the internet - some features may not work.",
+    );
+  };
+
   render() {
     let quotePrice = '...';
     if (!this.props.isFetching) {
