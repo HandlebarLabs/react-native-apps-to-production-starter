@@ -2,6 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import { Animated, Dimensions } from 'react-native';
 
 const WINDOW_DIMENSIONS = Dimensions.get('window');
+const SHOULD_ANIMATE = process.env.NODE_ENV !== 'development';
 
 class AnimateIn extends Component {
   static propTypes = {
@@ -18,11 +19,17 @@ class AnimateIn extends Component {
   }
 
   componentDidMount() {
-    Animated.timing(this.animatedValue, {
-      toValue: 1,
-      delay: this.props.delay || 0,
-      duration: this.props.duration || 500,
-    }).start();
+    const toValue = 1;
+    if (SHOULD_ANIMATE) {
+      Animated.timing(this.animatedValue, {
+        toValue,
+        delay: this.props.delay || 0,
+        duration: this.props.duration || 500,
+      }).start();
+    } else {
+      // avoid the animation and just set the value (saves eyes on multiple refresh)
+      this.animatedValue.setValue(toValue);
+    }
   }
 
   render() {
