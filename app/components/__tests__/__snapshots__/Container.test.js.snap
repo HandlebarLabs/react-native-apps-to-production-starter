@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders children props 1`] = `
+<View
+  style={
+    Array [
+      undefined,
+    ]
+  }
+>
+  <View />
+</View>
+`;
+
+exports[`uses the specified backgroundColor, if provided 1`] = `
+<View
+  style={
+    Array [
+      undefined,
+      Object {
+        "backgroundColor": "red",
+      },
+    ]
+  }
+/>
+`;
