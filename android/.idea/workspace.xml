@@ -6,7 +6,7 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09cba3aa-76d0-4768-b167-51a9b3a351d9" name="Default" comment="" />
+    <list default="true" id="4101c3d3-a8ed-4dca-923a-3d29345b1c07" name="Default" comment="" />
     <ignored path="android.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,25 +34,37 @@
       <file leaf-file-name="styles.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+            <state relative-caret-position="135">
+              <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+            <state relative-caret-position="375">
+              <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
               <folding>
-                <marker date="1500340281000" expanded="true" signature="1018:1036" ph="..." />
+                <element signature="e#683#701#0" expanded="true" />
               </folding>
             </state>
           </provider>
           <provider editor-type-id="android-manifest">
             <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SplashActivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/currencyconverter/SplashActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
@@ -2261,7 +2273,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="5960610586000" />
+        <entry key="$PROJECT_DIR$" value="5960627457000" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -2721,12 +2733,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/currencyconverter/SplashActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/currencyconverter/SplashActivity.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
     <option name="width" value="1327" />
     <option name="height" value="720" />
   </component>
@@ -2756,6 +2769,8 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -2795,32 +2810,6 @@
               <option name="myItemId" value="res" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mipmap" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="screen.png" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResGroupNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CurrencyConverter" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mipmap" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -2850,11 +2839,23 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CurrencyConverter" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="manifests" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidManifestsGroupNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="ProjectPane" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -3157,22 +3158,19 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="09cba3aa-76d0-4768-b167-51a9b3a351d9" name="Default" comment="" />
-      <created>1500337983669</created>
+      <changelist id="4101c3d3-a8ed-4dca-923a-3d29345b1c07" name="Default" comment="" />
+      <created>1500340540624</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1500337983669</updated>
+      <updated>1500340540624</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1327" height="720" extended-state="0" />
-    <editor active="false" />
+    <frame x="0" y="23" width="1327" height="720" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -3207,14 +3205,6 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
-  <component name="Vcs.Log.UiProperties">
-    <option name="RECENTLY_FILTERED_USER_GROUPS">
-      <collection />
-    </option>
-    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-      <collection />
-    </option>
-  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -3223,38 +3213,35 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/screen.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/currencyconverter/SplashActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+        <state relative-caret-position="135">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+        <state relative-caret-position="375">
+          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
           <folding>
-            <marker date="1500340281000" expanded="true" signature="1018:1036" ph="..." />
+            <element signature="e#683#701#0" expanded="true" />
           </folding>
         </state>
       </provider>
       <provider editor-type-id="android-manifest">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/currencyconverter/SplashActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>
