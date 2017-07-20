@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
-import SplashScreen from 'react-native-splash-screen';
+// import SplashScreen from 'react-native-splash-screen';
 
 import Navigator from './config/routes';
 import { AlertProvider } from './components/Alert';
@@ -11,7 +11,7 @@ buildStyles();
 
 class App extends Component {
   componentDidMount() {
-    SplashScreen.hide();
+    // SplashScreen.hide();
   }
 
   render() {
