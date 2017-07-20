@@ -13,6 +13,7 @@
     <SOURCES>
       <root url="jar://$PROJECT_DIR$/../node_modules/react-native/android/com/facebook/react/react-native/0.43.4/react-native-0.43.4-sources.jar!/" />
       <root url="jar://$PROJECT_DIR$/../node_modules/react-native/android/com/facebook/react/react-native/0.43.4/react-native-0.43.4-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../node_modules/react-native/android/com/facebook/react/react-native/0.43.4/react-native-0.43.4-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
