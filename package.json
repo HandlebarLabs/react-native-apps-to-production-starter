@@ -13,14 +13,12 @@
     "test": "node node_modules/jest/bin/jest.js --watch",
     "test:coverage": "node node_modules/jest/bin/jest.js --coverage && open coverage/lcov-report/index.html",
     "lint": "eslint app/",
-    "lint:fix": "eslint app/ --fix"
+    "lint:fix": "eslint app/ --fix",
+    "ios:beta": "(cd ios/ && fastlane ios beta)"
   },
   "jest": {
     "preset": "jest-expo",
-    "collectCoverageFrom": [
-      "app/*.js",
-      "app/**/*.js"
-    ]
+    "collectCoverageFrom": ["app/*.js", "app/**/*.js"]
   },
   "dependencies": {
     "babel-eslint": "^7.2.3",
