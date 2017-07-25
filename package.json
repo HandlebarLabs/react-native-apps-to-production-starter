@@ -19,7 +19,10 @@
   },
   "jest": {
     "preset": "jest-expo",
-    "collectCoverageFrom": ["app/*.js", "app/**/*.js"]
+    "collectCoverageFrom": [
+      "app/*.js",
+      "app/**/*.js"
+    ]
   },
   "dependencies": {
     "babel-eslint": "^7.2.3",
@@ -35,6 +38,7 @@
     "prettier-eslint": "^6.2.0",
     "react": "16.0.0-alpha.6",
     "react-native": "^0.43.4",
+    "react-native-code-push": "^2.1.1-beta",
     "react-native-dropdownalert": "^2.8.0",
     "react-native-extended-stylesheet": "^0.4.0",
     "react-native-splash-screen": "^2.1.0",
