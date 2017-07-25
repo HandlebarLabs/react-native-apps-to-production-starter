@@ -14,7 +14,8 @@
     "test:coverage": "node node_modules/jest/bin/jest.js --coverage && open coverage/lcov-report/index.html",
     "lint": "eslint app/",
     "lint:fix": "eslint app/ --fix",
-    "ios:beta": "(cd ios/ && fastlane ios beta)"
+    "ios:beta": "(cd ios/ && fastlane ios beta)",
+    "android:beta": "(cd android/ && fastlane android beta)"
   },
   "jest": {
     "preset": "jest-expo",
