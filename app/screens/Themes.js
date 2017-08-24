@@ -1,26 +1,26 @@
-import PropTypes from "prop-types";
-import React, { Component } from "react";
-import { ScrollView, StatusBar } from "react-native";
-import EStyleSheet from "react-native-extended-stylesheet";
-import { connect } from "react-redux";
+import PropTypes from 'prop-types';
+import React, { Component } from 'react';
+import { ScrollView, StatusBar } from 'react-native';
+import EStyleSheet from 'react-native-extended-stylesheet';
+import { connect } from 'react-redux';
 
-import { ListItem, Separator } from "../components/List";
-import { changePrimaryColor } from "../actions/theme";
+import { ListItem, Separator } from '../components/List';
+import { changePrimaryColor } from '../actions/theme';
 
 const styles = EStyleSheet.create({
-  $blue: "$primaryBlue",
-  $orange: "$primaryOrange",
-  $green: "$primaryGreen",
-  $purple: "$primaryPurple"
+  $blue: '$primaryBlue',
+  $orange: '$primaryOrange',
+  $green: '$primaryGreen',
+  $purple: '$primaryPurple',
 });
 
 class Themes extends Component {
   static propTypes = {
     navigation: PropTypes.object,
-    dispatch: PropTypes.func
+    dispatch: PropTypes.func,
   };
 
-  handlePressTheme = color => {
+  handlePressTheme = (color) => {
     this.props.dispatch(changePrimaryColor(color));
     this.props.navigation.goBack();
   };
