@@ -1,8 +1,15 @@
-import React, { PropTypes, Component } from 'react';
-import { View, TextInput, TouchableHighlight, Text, Animated } from 'react-native';
-import color from 'color';
+import PropTypes from "prop-types";
+import React, { Component } from "react";
+import {
+  View,
+  TextInput,
+  TouchableHighlight,
+  Text,
+  Animated
+} from "react-native";
+import color from "color";
 
-import styles from './styles';
+import styles from "./styles";
 
 class InputWithButton extends Component {
   constructor(props) {
@@ -16,18 +23,18 @@ class InputWithButton extends Component {
     if (parseFloat(this.props.value)) {
       Animated.sequence([
         Animated.timing(this.backgroundColor, {
-          toValue: 1,
+          toValue: 1
         }),
         Animated.timing(this.backgroundColor, {
-          toValue: 0,
-        }),
+          toValue: 0
+        })
       ]).start();
     }
   }
 
   render() {
     const underlayColor = color(styles.$buttonBackgroundColorBase).darken(
-      styles.$buttonBackgroundColorModifier,
+      styles.$buttonBackgroundColorModifier
     );
 
     const containerStyles = [styles.container];
@@ -35,8 +42,8 @@ class InputWithButton extends Component {
       containerStyles.push({
         backgroundColor: this.backgroundColor.interpolate({
           inputRange: [0, 1],
-          outputRange: [styles.$inputBackgroundBase, styles.$inputBackgroundAlt],
-        }),
+          outputRange: [styles.$inputBackgroundBase, styles.$inputBackgroundAlt]
+        })
       });
     }
 
@@ -52,10 +59,16 @@ class InputWithButton extends Component {
           style={styles.buttonContainer}
           underlayColor={underlayColor}
         >
-          <Text style={buttonStyles}>{this.props.buttonText}</Text>
+          <Text style={buttonStyles}>
+            {this.props.buttonText}
+          </Text>
         </TouchableHighlight>
         <View style={styles.separator} />
-        <TextInput style={styles.input} underlineColorAndroid="transparent" {...this.props} />
+        <TextInput
+          style={styles.input}
+          underlineColorAndroid="transparent"
+          {...this.props}
+        />
       </Animated.View>
     );
   }
@@ -66,7 +79,7 @@ InputWithButton.propTypes = {
   buttonText: PropTypes.string,
   editable: PropTypes.bool,
   textColor: PropTypes.string,
-  value: PropTypes.string,
+  value: PropTypes.string
 };
 
 export default InputWithButton;
