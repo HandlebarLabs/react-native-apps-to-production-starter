@@ -1,10 +1,9 @@
-# OSX
-#
-.DS_Store
-
 # Xcode
-#
-build/
+!**/*.xcodeproj
+!**/*.pbxproj
+!**/*.xcworkspacedata
+!**/*.xcsettings
+!**/*.xcscheme
 *.pbxuser
 !default.pbxuser
 *.mode1v3
@@ -22,32 +21,40 @@ DerivedData
 *.xcuserstate
 project.xcworkspace
 
-# Android/IntelliJ
-#
-build/
+# Gradle
+/build/
+/RNTester/android/app/build/
+/RNTester/android/app/gradle/
+/RNTester/android/app/gradlew
+/RNTester/android/app/gradlew.bat
+/ReactAndroid/build/
+
+# Buck
+.buckd
+buck-out
+/ReactAndroid/src/main/jni/prebuilt/lib/armeabi-v7a/
+/ReactAndroid/src/main/jni/prebuilt/lib/x86/
+/ReactAndroid/src/main/gen
+
+# Android
 .idea
 .gradle
 local.properties
 *.iml
+/android/
 
-# node.js
-#
-node_modules/
-npm-debug.log
-yarn-error.log
+# Node
+node_modules
+*.log
+.nvm
+/danger/node_modules/
 
-# BUCK
-buck-out/
-\.buckd/
-*.keystore
+# OS X
+.DS_Store
 
-# fastlane
-#
-# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
-# screenshots whenever they are needed.
-# For more information about the recommended setup visit:
-# https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Gitignore.md
+# Test generated files
+/ReactAndroid/src/androidTest/assets/AndroidTestBundle.js
+*.js.meta
 
-fastlane/report.xml
-fastlane/Preview.html
-fastlane/screenshots
+/coverage
+/third-party
