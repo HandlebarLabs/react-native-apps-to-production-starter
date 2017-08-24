@@ -1,2 +1,0 @@
-json_key_file "./app/fastlane-release-manager.json" # Path to the json secret file - Follow https://github.com/fastlane/supply#setup to get one
-package_name "com.handlebarlabs.currencyconverter" # e.g. com.krausefx.app
