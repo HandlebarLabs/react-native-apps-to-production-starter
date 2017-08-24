@@ -10,14 +10,12 @@ dependencies: \
   /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Base/RCTInvalidating.h \
   /Users/spencer/dev/react-native-apps-to-production-starter/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JavaScriptCore.h \
   /Users/spencer/dev/react-native-apps-to-production-starter/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JSCWrapper.h \
-  /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Modules/JSCSamplingProfiler.h \
   /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Base/RCTBridge+Private.h \
   /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Base/RCTEventDispatcher.h \
+  /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Modules/RCTJSCSamplingProfiler.h \
+  /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Base/RCTJSEnvironment.h \
   /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Base/RCTLog.h \
   /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Base/RCTAssert.h \
-  /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Profiler/RCTProfile.h \
   /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Base/RCTUtils.h \
-  /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/DevSupport/RCTPackagerClient.h \
-  /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/DevSupport/RCTPackagerClientResponder.h \
-  /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/DevSupport/RCTReloadPackagerMethod.h \
-  /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/DevSupport/RCTSamplingProfilerPackagerMethod.h
+  /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Profiler/RCTProfile.h \
+  /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/DevSupport/RCTPackagerConnection.h
