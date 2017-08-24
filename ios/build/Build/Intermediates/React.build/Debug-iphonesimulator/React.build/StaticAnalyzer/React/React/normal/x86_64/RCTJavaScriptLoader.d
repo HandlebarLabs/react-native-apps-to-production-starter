@@ -15,6 +15,7 @@ dependencies: \
   /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Views/RCTBorderStyle.h \
   /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Base/RCTLog.h \
   /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Base/RCTUtils.h \
   /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Views/RCTPointerEvents.h \
   /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Views/RCTTextDecorationLineType.h \
   /Users/spencer/dev/react-native-apps-to-production-starter/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
@@ -22,5 +23,4 @@ dependencies: \
   /Users/spencer/dev/react-native-apps-to-production-starter/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
   /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Base/RCTMultipartDataTask.h \
   /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Base/RCTMultipartStreamReader.h \
-  /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Base/RCTPerformanceLogger.h \
-  /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Base/RCTUtils.h
+  /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Base/RCTPerformanceLogger.h

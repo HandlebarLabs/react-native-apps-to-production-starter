@@ -6,6 +6,6 @@ if [ -z "${RCT_NO_LAUNCH_PACKAGER+xxx}" ] ; then
       exit 2
     fi
   else
-    open "$SRCROOT/../packager/launchPackager.command" || echo "Can't start packager automatically"
+    open "$SRCROOT/../scripts/launchPackager.command" || echo "Can't start packager automatically"
   fi
 fi

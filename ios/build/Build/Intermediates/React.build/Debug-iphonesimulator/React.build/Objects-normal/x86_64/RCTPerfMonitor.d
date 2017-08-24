@@ -10,7 +10,6 @@ dependencies: \
   /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Modules/RCTDevSettings.h \
   /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Profiler/RCTFPSGraph.h \
   /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Base/RCTJavaScriptExecutor.h \
-  /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Executors/RCTJSCExecutor.h \
   /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Base/RCTPerformanceLogger.h \
   /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Base/RCTRootView.h \
   /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Modules/RCTUIManager.h \
@@ -20,6 +19,7 @@ dependencies: \
   /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Views/RCTBorderStyle.h \
   /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Base/RCTLog.h \
   /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Base/RCTUtils.h \
   /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Views/RCTPointerEvents.h \
   /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Views/RCTTextDecorationLineType.h \
   /Users/spencer/dev/react-native-apps-to-production-starter/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
@@ -29,4 +29,4 @@ dependencies: \
   /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Views/UIView+React.h \
   /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Views/RCTComponent.h \
   /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Base/RCTBridge+Private.h \
-  /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Modules/RCTDevMenu.h
+  /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/DevSupport/RCTDevMenu.h

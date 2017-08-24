@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Modules/RCTDevMenu.m \
-  /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Modules/RCTDevMenu.h \
+  /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/DevSupport/RCTDevMenu.m \
+  /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/DevSupport/RCTDevMenu.h \
   /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Base/RCTBridge.h \
   /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
   /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
