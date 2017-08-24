@@ -10,4 +10,6 @@ dependencies: \
   /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Base/RCTBridgeModule.h \
   /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Base/RCTFrameUpdate.h \
   /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Base/RCTInvalidating.h \
-  /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Views/UIView+React.h
+  /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Views/UIView+React.h \
+  /Users/spencer/dev/react-native-apps-to-production-starter/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
+  /Users/spencer/dev/react-native-apps-to-production-starter/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h

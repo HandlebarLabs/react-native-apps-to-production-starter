@@ -15,6 +15,7 @@ dependencies: \
   /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Views/RCTBorderStyle.h \
   /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Base/RCTLog.h \
   /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Base/RCTUtils.h \
   /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Views/RCTPointerEvents.h \
   /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Views/RCTTextDecorationLineType.h \
   /Users/spencer/dev/react-native-apps-to-production-starter/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
@@ -26,14 +27,17 @@ dependencies: \
   /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Modules/RCTAccessibilityManager.h \
   /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Base/RCTBridge+Private.h \
   /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Views/RCTComponentData.h \
+  /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Modules/RCTLayoutAnimation.h \
+  /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Modules/RCTLayoutAnimationGroup.h \
   /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Base/RCTModuleData.h \
   /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Base/RCTModuleMethod.h \
   /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Base/RCTBridgeMethod.h \
   /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Base/RCTNullability.h \
   /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Profiler/RCTProfile.h \
+  /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Base/RCTRootContentView.h \
+  /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Views/RCTView.h \
   /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Views/RCTRootShadowView.h \
   /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Views/RCTShadowView.h \
   /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Base/RCTRootViewInternal.h \
   /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Views/RCTScrollableProtocol.h \
-  /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Base/RCTUtils.h \
-  /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Views/RCTView.h
+  /Users/spencer/dev/react-native-apps-to-production-starter/node_modules/react-native/React/Modules/RCTUIManagerObserverCoordinator.h
