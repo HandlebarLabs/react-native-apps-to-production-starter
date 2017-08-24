@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>application-identifier</key>
-	<string>YVPMY6223N.org.reactjs.native.example.CurrencyConverter</string>
+	<string>98PFB5JGQY.org.reactjs.native.example.CurrencyConverter</string>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>YVPMY6223N.org.reactjs.native.example.CurrencyConverter</string>
+		<string>98PFB5JGQY.org.reactjs.native.example.CurrencyConverter</string>
 	</array>
 </dict>
 </plist>
