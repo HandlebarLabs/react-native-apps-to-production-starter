@@ -67,7 +67,7 @@ class AnimateIn extends Component {
     }
 
     return (
-      <Animated.View style={styles}>
+      <Animated.View style={[{ width: '100%', alignSelf: 'center' }, styles]}>
         {this.props.children}
       </Animated.View>
     );
