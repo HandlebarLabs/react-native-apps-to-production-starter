@@ -4,6 +4,7 @@
   "private": true,
   "devDependencies": {
     "babel-eslint": "^7.2.3",
+    "babel-preset-react-native-stage-0": "^1.0.1",
     "eslint": "^4.5.0",
     "eslint-config-airbnb": "^15.1.0",
     "eslint-plugin-import": "^2.7.0",
@@ -12,7 +13,6 @@
     "jest-expo": "^20.0.0",
     "prettier": "^1.5.3",
     "prettier-eslint": "^6.4.2",
-    "react-native-scripts": "1.2.1",
     "react-test-renderer": "16.0.0-alpha.6"
   },
   "scripts": {
@@ -28,11 +28,13 @@
   },
   "jest": {
     "preset": "jest-expo",
-    "collectCoverageFrom": ["app/*.js", "app/**/*.js"]
+    "collectCoverageFrom": [
+      "app/*.js",
+      "app/**/*.js"
+    ]
   },
   "dependencies": {
     "color": "^2.0.0",
-    "expo": "^20.0.0",
     "hoist-non-react-statics": "^2.3.0",
     "moment": "^2.18.1",
     "prop-types": "^15.5.10",
@@ -41,7 +43,7 @@
     "react-native-dropdownalert": "^2.8.0",
     "react-native-extended-stylesheet": "^0.6.0",
     "react-native-splash-screen": "^3.0.0",
-    "react-native-vector-icons": "^4.2.0",
+    "react-native-vector-icons": "^4.4.0",
     "react-navigation": "^1.0.0-beta.11",
     "react-redux": "^5.0.4",
     "redux": "^3.7.2",
