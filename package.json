@@ -9,11 +9,11 @@
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-react": "^7.3.0",
-    "jest-expo": "^20.0.0",
+    "jest-expo": "^21.0.2",
     "prettier": "^1.5.3",
     "prettier-eslint": "^6.4.2",
     "react-native-scripts": "1.2.1",
-    "react-test-renderer": "16.0.0-alpha.6"
+    "react-test-renderer": "^16.0.0-rc.3"
   },
   "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
   "scripts": {
@@ -28,7 +28,10 @@
   },
   "jest": {
     "preset": "jest-expo",
-    "collectCoverageFrom": ["app/*.js", "app/**/*.js"]
+    "collectCoverageFrom": [
+      "app/*.js",
+      "app/**/*.js"
+    ]
   },
   "dependencies": {
     "@expo/vector-icons": "^5.1.0",
