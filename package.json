@@ -22,16 +22,14 @@
     "android": "react-native-scripts android",
     "ios": "react-native-scripts ios",
     "test": "node node_modules/jest/bin/jest.js --watch",
-    "test:coverage": "node node_modules/jest/bin/jest.js --coverage && open coverage/lcov-report/index.html",
+    "test:coverage":
+      "node node_modules/jest/bin/jest.js --coverage && open coverage/lcov-report/index.html",
     "lint": "eslint app/",
     "lint:fix": "eslint app/ --fix"
   },
   "jest": {
     "preset": "jest-expo",
-    "collectCoverageFrom": [
-      "app/*.js",
-      "app/**/*.js"
-    ]
+    "collectCoverageFrom": ["app/*.js", "app/**/*.js"]
   },
   "dependencies": {
     "@expo/vector-icons": "^5.1.0",
