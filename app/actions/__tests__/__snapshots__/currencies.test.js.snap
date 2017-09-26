@@ -1,5 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`creates a CHANGE_BASE_CURRENCY action 1`] = `
+Object {
+  "currency": "USD",
+  "type": "CHANGE_BASE_CURRENCY",
+}
+`;
+
 exports[`creates a CHANGE_CURRENCY_AMOUNT action 1`] = `
 Object {
   "amount": 1000,
@@ -7,8 +14,21 @@ Object {
 }
 `;
 
+exports[`creates a CHANGE_QUOTE_CURRENCY action 1`] = `
+Object {
+  "currency": "GBP",
+  "type": "CHANGE_QUOTE_CURRENCY",
+}
+`;
+
 exports[`creates a GET_INITIAL_CONVERSION action 1`] = `
 Object {
   "type": "GET_INITIAL_CONVERSION",
+}
+`;
+
+exports[`creates a SWAP_CURRENCY action 1`] = `
+Object {
+  "type": "SWAP_CURRENCY",
 }
 `;

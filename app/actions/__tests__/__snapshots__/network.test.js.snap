@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`creates a CHANGE_CONNECTION_STATUS action 1`] = `
+Object {
+  "status": "offline",
+  "type": "CHANGE_CONNECTION_STATUS",
+}
+`;
