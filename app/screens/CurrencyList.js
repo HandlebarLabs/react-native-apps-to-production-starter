@@ -9,7 +9,7 @@ import { changeBaseCurrency, changeQuoteCurrency } from '../actions/currencies';
 
 class CurrencyList extends Component {
   static propTypes = {
-    navigation: PropTypes.object,
+    navigation: PropTypes.object.isRequired,
     dispatch: PropTypes.func,
     baseCurrency: PropTypes.string,
     quoteCurrency: PropTypes.string,
@@ -37,13 +37,14 @@ class CurrencyList extends Component {
         <StatusBar translucent={false} barStyle="default" />
         <FlatList
           data={currencies}
-          renderItem={({ item }) =>
-            (<ListItem
+          renderItem={({ item }) => (
+            <ListItem
               text={item}
               selected={item === comparisonCurrency}
               onPress={() => this.handlePress(item)}
               iconBackground={this.props.primaryColor}
-            />)}
+            />
+          )}
           keyExtractor={item => item}
           ItemSeparatorComponent={Separator}
         />
