@@ -18,6 +18,8 @@ module-3-lesson-6-snapshot
 module-3-lesson-7-build-styles
 module-3-lesson-8-actions
 module-3-lesson-9-reducers
+module-3-lesson-10-interactions
+module-3-lesson-11-screens
 module-4
 module-4-lesson-5-ejecting
 module-4-lesson-7-ios-icon
