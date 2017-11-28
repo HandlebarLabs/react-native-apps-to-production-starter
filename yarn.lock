@@ -98,15 +98,6 @@
   dependencies:
     cross-spawn "^5.1.0"
 
-<<<<<<< HEAD
-"@expo/vector-icons@^5.1.0":
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/@expo/vector-icons/-/vector-icons-5.1.0.tgz#bea328a58ee60659bd566978f035d0001cca60b3"
-  dependencies:
-    react-native-vector-icons "4.1.1"
-
-=======
->>>>>>> module-4-lesson-7-ios-icon
 "@segment/loosely-validate-event@^1.1.2":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@segment/loosely-validate-event/-/loosely-validate-event-1.1.2.tgz#d77840999e3f7e43e74b3b0d43391c1526f793b8"
@@ -5185,59 +5176,9 @@ react-native-extended-stylesheet@^0.8.0:
     css-mediaquery "^0.1.2"
     object-resolve-path "^1.1.0"
 
-<<<<<<< HEAD
-react-native-gesture-handler@^1.0.0-alpha.14:
-  version "1.0.0-alpha.17"
-  resolved "https://registry.yarnpkg.com/react-native-gesture-handler/-/react-native-gesture-handler-1.0.0-alpha.17.tgz#1ae4412e1b208d175b34a14931d0635064a92e7b"
-
-react-native-maps@0.15.3:
-  version "0.15.3"
-  resolved "https://registry.yarnpkg.com/react-native-maps/-/react-native-maps-0.15.3.tgz#5d9e0a8e30ecc51dc755b7a3b9d6b6ed5e2dd08c"
-
-react-native-safe-module@^1.1.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/react-native-safe-module/-/react-native-safe-module-1.2.0.tgz#a23824ca24edc2901913694a76646475113d570d"
-  dependencies:
-    dedent "^0.6.0"
-
-react-native-scripts@1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/react-native-scripts/-/react-native-scripts-1.2.1.tgz#df908e0f5269a5a359d00d61604faf2ba92d64de"
-  dependencies:
-    "@expo/bunyan" "1.8.10"
-    babel-runtime "^6.9.2"
-    chalk "^2.0.1"
-    cross-spawn "^5.0.1"
-    fs-extra "^3.0.1"
-    indent-string "^3.0.0"
-    inquirer "^3.0.1"
-    match-require "^2.0.0"
-    minimist "^1.2.0"
-    path-exists "^3.0.0"
-    progress "^2.0.0"
-    qrcode-terminal "^0.11.0"
-    rimraf "^2.6.1"
-    xdl "44.0.0"
-
-react-native-splash-screen@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/react-native-splash-screen/-/react-native-splash-screen-2.1.0.tgz#4e0a5e4e8c32974fe7a3cdb4d9a226d06d9daf4f"
-
-react-native-svg@5.3.0:
-  version "5.3.0"
-  resolved "https://registry.yarnpkg.com/react-native-svg/-/react-native-svg-5.3.0.tgz#0d2ca98bee6726d627c2ca31617ac9c5f7d42daf"
-  dependencies:
-    color "^0.11.1"
-    lodash "^4.16.6"
-
-react-native-tab-view@^0.0.67:
-  version "0.0.67"
-  resolved "https://registry.yarnpkg.com/react-native-tab-view/-/react-native-tab-view-0.0.67.tgz#cdd146fe5e5d4baff6c89f2d5d0b15fa23db39d0"
-=======
 react-native-scripts@1.7.0:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/react-native-scripts/-/react-native-scripts-1.7.0.tgz#17aef327877dbc6bd7e0fca83308681941ce111a"
->>>>>>> module-4-lesson-7-ios-icon
   dependencies:
     "@expo/bunyan" "1.8.10"
     babel-runtime "^6.9.2"
@@ -5254,6 +5195,10 @@ react-native-scripts@1.7.0:
     qrcode-terminal "^0.11.0"
     rimraf "^2.6.1"
     xdl "46.0.1"
+
+react-native-splash-screen@^3.0.0:
+  version "3.0.6"
+  resolved "https://registry.yarnpkg.com/react-native-splash-screen/-/react-native-splash-screen-3.0.6.tgz#c0bbf2c8ae40a313c4c7044f55e569414ff68332"
 
 react-native-tab-view@^0.0.70:
   version "0.0.70"
