@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { StatusBar, KeyboardAvoidingView, NetInfo } from 'react-native';
 import { connect } from 'react-redux';
@@ -9,7 +8,7 @@ import { InputWithButton } from '../components/TextInput';
 import { ClearButton } from '../components/Button';
 import { LastConverted } from '../components/Text';
 import { Header } from '../components/Header';
-import { connectAlert } from '../components/Alert';
+import { AlertConsumer } from '../components/Alert';
 
 import {
   changeCurrencyAmount,
@@ -19,28 +18,16 @@ import {
 import { changeNetworkStatus } from '../actions/network';
 
 class Home extends Component {
-  static propTypes = {
-    navigation: PropTypes.object,
-    dispatch: PropTypes.func,
-    baseCurrency: PropTypes.string,
-    quoteCurrency: PropTypes.string,
-    amount: PropTypes.number,
-    conversionRate: PropTypes.number,
-    lastConvertedDate: PropTypes.object,
-    isFetching: PropTypes.bool,
-    primaryColor: PropTypes.string,
-    currencyError: PropTypes.string,
-    alertWithType: PropTypes.func,
-  };
+  constructor(props) {
+    super(props);
 
-  componentWillMount() {
     this.props.dispatch(getInitialConversion());
     NetInfo.addEventListener('change', this.handleNetworkChange);
   }
 
-  componentWillReceiveProps(nextProps) {
-    if (nextProps.currencyError && !this.props.currencyError) {
-      this.props.alertWithType('error', 'Error', nextProps.currencyError);
+  componentDidUpdate(prevProps) {
+    if (this.props.currencyError && !prevProps.currencyError) {
+      this.props.alertWithType('error', 'Error', this.props.currencyError);
     }
   }
 
@@ -86,7 +73,7 @@ class Home extends Component {
 
     return (
       <Container backgroundColor={this.props.primaryColor}>
-        <StatusBar backgroundColor="blue" barStyle="light-content" />
+        <StatusBar barStyle="light-content" />
         <Header onPress={this.handleOptionsPress} />
         <KeyboardAvoidingView behavior="padding">
           <Logo tintColor={this.props.primaryColor} />
@@ -122,8 +109,7 @@ class Home extends Component {
 }
 
 const mapStateToProps = (state) => {
-  const baseCurrency = state.currencies.baseCurrency;
-  const quoteCurrency = state.currencies.quoteCurrency;
+  const { baseCurrency, quoteCurrency } = state.currencies;
   const conversionSelector = state.currencies.conversions[baseCurrency] || {};
   const rates = conversionSelector.rates || {};
 
@@ -141,4 +127,10 @@ const mapStateToProps = (state) => {
   };
 };
 
-export default connect(mapStateToProps)(connectAlert(Home));
+const ConnectedHome = connect(mapStateToProps)(Home);
+
+export default props => (
+  <AlertConsumer>
+    {context => <ConnectedHome alertWithType={context.alertWithType} {...props} />}
+  </AlertConsumer>
+);
