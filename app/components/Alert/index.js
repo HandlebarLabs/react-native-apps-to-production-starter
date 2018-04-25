@@ -1,5 +1,5 @@
 import React from 'react';
-import DropdownAlert from 'react-native-dropdownalert';
+import DropdownAlert from './DropdownAlert';
 
 const AlertContext = React.createContext({});
 
