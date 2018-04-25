@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 import { View, Image, TouchableOpacity } from 'react-native';
 
@@ -11,9 +10,5 @@ const Header = ({ onPress }) => (
     </TouchableOpacity>
   </View>
 );
-
-Header.propTypes = {
-  onPress: PropTypes.func,
-};
 
 export default Header;

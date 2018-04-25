@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 import { View, TextInput, TouchableHighlight, Text } from 'react-native';
 
@@ -29,13 +28,6 @@ const InputWithButton = (props) => {
       <TextInput style={styles.input} underlineColorAndroid="transparent" {...props} />
     </View>
   );
-};
-
-InputWithButton.propTypes = {
-  onPress: PropTypes.func,
-  buttonText: PropTypes.string,
-  editable: PropTypes.bool,
-  textColor: PropTypes.string,
 };
 
 export default InputWithButton;

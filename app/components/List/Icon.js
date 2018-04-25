@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 import { View, Image } from 'react-native';
 
@@ -15,24 +14,18 @@ const Icon = ({ visible, checkmark, iconBackground }) => {
     }
     return (
       <View style={iconStyles}>
-        {checkmark
-          ? <Image
+        {checkmark ? (
+          <Image
             source={require('./images/check.png')}
             style={styles.checkIcon}
             resizeMode="contain"
           />
-          : null}
+        ) : null}
       </View>
     );
   }
 
   return <View style={styles.icon} />;
-};
-
-Icon.propTypes = {
-  visible: PropTypes.bool,
-  checkmark: PropTypes.bool,
-  iconBackground: PropTypes.string,
 };
 
 export default Icon;

@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { ScrollView, StatusBar } from 'react-native';
 import { connect } from 'react-redux';
@@ -8,11 +7,6 @@ import { changePrimaryColor } from '../actions/theme';
 import colors from '../config/colors';
 
 class Themes extends Component {
-  static propTypes = {
-    navigation: PropTypes.object,
-    dispatch: PropTypes.func,
-  };
-
   handlePressTheme = (color) => {
     this.props.dispatch(changePrimaryColor(color));
     this.props.navigation.goBack();

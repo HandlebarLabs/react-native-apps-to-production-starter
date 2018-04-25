@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { StatusBar, KeyboardAvoidingView } from 'react-native';
 import { connect } from 'react-redux';
@@ -14,20 +13,6 @@ import { connectAlert } from '../components/Alert';
 import { changeCurrencyAmount, swapCurrency, getInitialConversion } from '../actions/currencies';
 
 class Home extends Component {
-  static propTypes = {
-    navigation: PropTypes.object,
-    dispatch: PropTypes.func,
-    baseCurrency: PropTypes.string,
-    quoteCurrency: PropTypes.string,
-    amount: PropTypes.number,
-    conversionRate: PropTypes.number,
-    lastConvertedDate: PropTypes.object,
-    isFetching: PropTypes.bool,
-    primaryColor: PropTypes.string,
-    currencyError: PropTypes.string,
-    alertWithType: PropTypes.func,
-  };
-
   componentWillMount() {
     this.props.dispatch(getInitialConversion());
   }

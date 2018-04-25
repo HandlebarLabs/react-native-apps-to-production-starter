@@ -9,10 +9,6 @@ class AlertProvider extends Component {
     alert: PropTypes.func,
   };
 
-  static propTypes = {
-    children: PropTypes.any,
-  };
-
   getChildContext() {
     return {
       alert: (...args) => this.dropdown.alert(...args),

@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { View, Text, Keyboard, Animated, Platform, StyleSheet } from 'react-native';
 
@@ -7,10 +6,6 @@ import styles, { imageSizes } from './styles';
 const ANIMATION_DURATION = 250;
 
 class Logo extends Component {
-  static propTypes = {
-    tintColor: PropTypes.string,
-  };
-
   constructor(props) {
     super(props);
 

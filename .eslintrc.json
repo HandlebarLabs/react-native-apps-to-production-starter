@@ -12,9 +12,9 @@
         "extensions": [".js", ".jsx"]
       }
     ],
-    "react/forbid-prop-types": [0],
     "react/require-default-props": [0],
     "global-require": [0],
-    "func-names": [0]
+    "func-names": [0],
+    "react/prop-types": [0]
   }
 }
