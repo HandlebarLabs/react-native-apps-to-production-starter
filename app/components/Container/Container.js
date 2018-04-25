@@ -1,5 +1,5 @@
 import React from 'react';
-import { View } from 'react-native';
+import { SafeAreaView } from 'react-native';
 
 import styles from './styles';
 
@@ -8,7 +8,7 @@ const Container = ({ children, backgroundColor }) => {
   if (backgroundColor) {
     containerStyles.push({ backgroundColor });
   }
-  return <View style={containerStyles}>{children}</View>;
+  return <SafeAreaView style={containerStyles}>{children}</SafeAreaView>;
 };
 
 export default Container;
