@@ -30,7 +30,6 @@
   },
   "dependencies": {
     "@expo/vector-icons": "^6.3.1",
-    "color": "^2.0.0",
     "expo": "^26.0.0",
     "hoist-non-react-statics": "^2.3.0",
     "moment": "^2.22.1",
@@ -38,7 +37,6 @@
     "react": "16.3.0-alpha.1",
     "react-native": "^0.54.0",
     "react-native-dropdownalert": "^3.1.2",
-    "react-native-extended-stylesheet": "^0.8.0",
     "react-navigation": "^1.0.0-beta.21",
     "react-redux": "^5.0.4",
     "redux": "^3.7.2",

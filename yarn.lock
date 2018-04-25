@@ -1992,7 +1992,7 @@ color-string@^1.5.2:
     color-name "^1.0.0"
     simple-swizzle "^0.2.2"
 
-color@^2.0.0, color@^2.0.1:
+color@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/color/-/color-2.0.1.tgz#e4ed78a3c4603d0891eba5430b04b86314f4c839"
   dependencies:
@@ -2176,10 +2176,6 @@ crypto-js@^3.1.9-1:
 crypto-token@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/crypto-token/-/crypto-token-1.0.1.tgz#27c6482faf3b63c2f5da11577f8304346fe797a5"
-
-css-mediaquery@^0.1.2:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/css-mediaquery/-/css-mediaquery-0.1.2.tgz#6a2c37344928618631c54bd33cedd301da18bea0"
 
 cssom@0.3.x, "cssom@>= 0.3.2 < 0.4.0":
   version "0.3.2"
@@ -5039,10 +5035,6 @@ object-keys@^1.0.10, object-keys@^1.0.8:
   version "1.0.11"
   resolved "https://registry.yarnpkg.com/object-keys/-/object-keys-1.0.11.tgz#c54601778ad560f1142ce0e01bcca8b56d13426d"
 
-object-resolve-path@^1.1.0:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/object-resolve-path/-/object-resolve-path-1.1.1.tgz#a7f8f93e8a20af80e44217ba7db54316d9d12232"
-
 object.assign@^4.0.4:
   version "4.0.4"
   resolved "https://registry.yarnpkg.com/object.assign/-/object.assign-4.0.4.tgz#b1c9cc044ef1b9fe63606fc141abbb32e14730cc"
@@ -5595,13 +5587,6 @@ react-native-dropdownalert@^3.1.2:
   resolved "https://registry.yarnpkg.com/react-native-dropdownalert/-/react-native-dropdownalert-3.1.2.tgz#784b573a335987d66908bd66075b5d48ef7b5d70"
   dependencies:
     prop-types "15.5.10"
-
-react-native-extended-stylesheet@^0.8.0:
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/react-native-extended-stylesheet/-/react-native-extended-stylesheet-0.8.0.tgz#28a59d3bd3f51131fcfb08a27d645e1d60b427e9"
-  dependencies:
-    css-mediaquery "^0.1.2"
-    object-resolve-path "^1.1.0"
 
 react-native-gesture-handler@1.0.0-alpha.41:
   version "1.0.0-alpha.41"
