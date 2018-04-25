@@ -18,7 +18,10 @@ class Home extends Component {
     super(props);
 
     this.props.dispatch(getInitialConversion());
-    NetInfo.addEventListener('change', this.handleNetworkChange);
+  }
+
+  componentDidMount() {
+    NetInfo.addEventListener('connectionChange', this.handleNetworkChange);
   }
 
   componentDidUpdate(prevProps) {
@@ -32,7 +35,7 @@ class Home extends Component {
   }
 
   handleNetworkChange = (info) => {
-    this.props.dispatch(changeNetworkStatus(info));
+    this.props.dispatch(changeNetworkStatus(info.type));
   };
 
   handleChangeText = (text) => {
@@ -63,7 +66,7 @@ class Home extends Component {
 
   handleDisconnectedPress = () => {
     this.props.alertWithType(
-      'warn',
+      'error',
       'Not connected to the internet!',
       "Just a heads up that you're not connected to the internet - some features may not work.",
     );
