@@ -66,7 +66,7 @@ class Home extends Component {
 
   handleDisconnectedPress = () => {
     this.props.alertWithType(
-      'warn',
+      'error',
       'Not connected to the internet!',
       "Just a heads up that you're not connected to the internet - some features may not work.",
     );
