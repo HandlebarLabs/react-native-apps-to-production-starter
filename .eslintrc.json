@@ -15,6 +15,7 @@
     "react/require-default-props": [0],
     "global-require": [0],
     "func-names": [0],
-    "react/prop-types": [0]
+    "react/prop-types": [0],
+    "import/prefer-default-export": [0]
   }
 }
