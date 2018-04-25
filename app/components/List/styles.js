@@ -33,5 +33,6 @@ export default StyleSheet.create({
   },
   checkIcon: {
     width: 18,
+    tintColor: colors.$white,
   },
 });

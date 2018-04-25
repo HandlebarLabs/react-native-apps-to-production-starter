@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-import { ScrollView, StatusBar, Platform, Linking } from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
-import { ListItem, Separator } from '../components/List';
+import { ScrollView, StatusBar, Linking } from 'react-native';
+import { ListItem, Separator, Icon } from '../components/List';
 import { AlertConsumer } from '../components/Alert';
 
-const ICON_PREFIX = Platform.OS === 'ios' ? 'ios' : 'md';
 const ICON_COLOR = '#868686';
 const ICON_SIZE = 23;
 
@@ -26,14 +24,28 @@ class Options extends Component {
           text="Themes"
           onPress={this.handlePressThemes}
           customIcon={
-            <Ionicons name={`${ICON_PREFIX}-arrow-forward`} size={ICON_SIZE} color={ICON_COLOR} />
+            <Icon
+              visible
+              iconName="arrow-forward"
+              iconSize={ICON_SIZE}
+              iconColor={ICON_COLOR}
+              iconBackground="transparent"
+            />
           }
         />
         <Separator />
         <ListItem
           text="Fixer.io"
           onPress={this.handlePressSite}
-          customIcon={<Ionicons name={`${ICON_PREFIX}-link`} size={ICON_SIZE} color={ICON_COLOR} />}
+          customIcon={
+            <Icon
+              visible
+              iconName="link"
+              iconSize={ICON_SIZE}
+              iconColor={ICON_COLOR}
+              iconBackground="transparent"
+            />
+          }
         />
         <Separator />
       </ScrollView>

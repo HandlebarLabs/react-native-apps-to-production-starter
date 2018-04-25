@@ -20,7 +20,6 @@ class Themes extends Component {
           text="Blue"
           onPress={() => this.handlePressTheme(colors.$primaryBlue)}
           selected
-          checkmark={false}
           iconBackground={colors.$primaryBlue}
         />
         <Separator />
@@ -28,7 +27,6 @@ class Themes extends Component {
           text="Orange"
           onPress={() => this.handlePressTheme(colors.$primaryOrange)}
           selected
-          checkmark={false}
           iconBackground={colors.$primaryOrange}
         />
         <Separator />
@@ -36,7 +34,6 @@ class Themes extends Component {
           text="Green"
           onPress={() => this.handlePressTheme(colors.$primaryGreen)}
           selected
-          checkmark={false}
           iconBackground={colors.$primaryGreen}
         />
         <Separator />
@@ -44,7 +41,6 @@ class Themes extends Component {
           text="Purple"
           onPress={() => this.handlePressTheme(colors.$primaryPurple)}
           selected
-          checkmark={false}
           iconBackground={colors.$primaryPurple}
         />
         <Separator />

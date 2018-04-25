@@ -8,17 +8,17 @@ import Icon from './Icon';
 const ListItem = ({
   text,
   onPress,
-  checkmark = true,
   selected = false,
   visible = true,
   customIcon = null,
   iconBackground,
+  iconName,
 }) => (
   <TouchableHighlight onPress={onPress} underlayColor={colors.$border}>
     <View style={styles.row}>
       <Text style={styles.text}>{text}</Text>
       {selected ? (
-        <Icon visible={visible} checkmark={checkmark} iconBackground={iconBackground} />
+        <Icon visible={visible} iconName={iconName} iconBackground={iconBackground} />
       ) : (
         <Icon />
       )}
