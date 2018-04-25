@@ -18,7 +18,10 @@ class Home extends Component {
     super(props);
 
     this.props.dispatch(getInitialConversion());
-    NetInfo.addEventListener('change', this.handleNetworkChange);
+  }
+
+  componentDidMount() {
+    NetInfo.addEventListener('connectionChange', this.handleNetworkChange);
   }
 
   componentDidUpdate(prevProps) {
@@ -32,7 +35,7 @@ class Home extends Component {
   }
 
   handleNetworkChange = (info) => {
-    this.props.dispatch(changeNetworkStatus(info));
+    this.props.dispatch(changeNetworkStatus(info.type));
   };
 
   handleChangeText = (text) => {
