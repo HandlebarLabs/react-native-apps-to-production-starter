@@ -21,8 +21,7 @@ class Options extends Component {
 
   handlePressSite = () => {
     Linking.openURL('http://fixer.io').catch(() =>
-      this.props.alertWithType('error', 'Sorry!', "Fixer.io can't be opened right now."),
-    );
+      this.props.alertWithType('error', 'Sorry!', "Fixer.io can't be opened right now."));
   };
 
   render() {
