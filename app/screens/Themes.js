@@ -1,25 +1,12 @@
-import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { ScrollView, StatusBar } from 'react-native';
-import EStyleSheet from 'react-native-extended-stylesheet';
 import { connect } from 'react-redux';
 
 import { ListItem, Separator } from '../components/List';
 import { changePrimaryColor } from '../actions/theme';
-
-const styles = EStyleSheet.create({
-  $blue: '$primaryBlue',
-  $orange: '$primaryOrange',
-  $green: '$primaryGreen',
-  $purple: '$primaryPurple',
-});
+import colors from '../config/colors';
 
 class Themes extends Component {
-  static propTypes = {
-    navigation: PropTypes.object,
-    dispatch: PropTypes.func,
-  };
-
   handlePressTheme = (color) => {
     this.props.dispatch(changePrimaryColor(color));
     this.props.navigation.goBack();
@@ -28,37 +15,33 @@ class Themes extends Component {
   render() {
     return (
       <ScrollView>
-        <StatusBar translucent={false} barStyle="default" />
+        <StatusBar barStyle="default" />
         <ListItem
           text="Blue"
-          onPress={() => this.handlePressTheme(styles.$blue)}
+          onPress={() => this.handlePressTheme(colors.$primaryBlue)}
           selected
-          checkmark={false}
-          iconBackground={styles.$blue}
+          iconBackground={colors.$primaryBlue}
         />
         <Separator />
         <ListItem
           text="Orange"
-          onPress={() => this.handlePressTheme(styles.$orange)}
+          onPress={() => this.handlePressTheme(colors.$primaryOrange)}
           selected
-          checkmark={false}
-          iconBackground={styles.$orange}
+          iconBackground={colors.$primaryOrange}
         />
         <Separator />
         <ListItem
           text="Green"
-          onPress={() => this.handlePressTheme(styles.$green)}
+          onPress={() => this.handlePressTheme(colors.$primaryGreen)}
           selected
-          checkmark={false}
-          iconBackground={styles.$green}
+          iconBackground={colors.$primaryGreen}
         />
         <Separator />
         <ListItem
           text="Purple"
-          onPress={() => this.handlePressTheme(styles.$purple)}
+          onPress={() => this.handlePressTheme(colors.$primaryPurple)}
           selected
-          checkmark={false}
-          iconBackground={styles.$purple}
+          iconBackground={colors.$primaryPurple}
         />
         <Separator />
       </ScrollView>

@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { StatusBar, KeyboardAvoidingView, NetInfo } from 'react-native';
 import { connect } from 'react-redux';
@@ -9,39 +8,25 @@ import { InputWithButton } from '../components/TextInput';
 import { ClearButton } from '../components/Button';
 import { LastConverted } from '../components/Text';
 import { Header } from '../components/Header';
-import { connectAlert } from '../components/Alert';
+import { AlertConsumer } from '../components/Alert';
 
-import {
-  changeCurrencyAmount,
-  swapCurrency,
-  getInitialConversion,
-} from '../actions/currencies';
+import { changeCurrencyAmount, swapCurrency, getInitialConversion } from '../actions/currencies';
 import { changeNetworkStatus } from '../actions/network';
 
 class Home extends Component {
-  static propTypes = {
-    navigation: PropTypes.object,
-    dispatch: PropTypes.func,
-    baseCurrency: PropTypes.string,
-    quoteCurrency: PropTypes.string,
-    amount: PropTypes.number,
-    conversionRate: PropTypes.number,
-    lastConvertedDate: PropTypes.object,
-    isFetching: PropTypes.bool,
-    primaryColor: PropTypes.string,
-    currencyError: PropTypes.string,
-    alertWithType: PropTypes.func,
-    isConnected: PropTypes.bool,
-  };
+  constructor(props) {
+    super(props);
 
-  componentWillMount() {
     this.props.dispatch(getInitialConversion());
-    NetInfo.addEventListener('change', this.handleNetworkChange);
   }
 
-  componentWillReceiveProps(nextProps) {
-    if (nextProps.currencyError && !this.props.currencyError) {
-      this.props.alertWithType('error', 'Error', nextProps.currencyError);
+  componentDidMount() {
+    NetInfo.addEventListener('connectionChange', this.handleNetworkChange);
+  }
+
+  componentDidUpdate(prevProps) {
+    if (this.props.currencyError && !prevProps.currencyError) {
+      this.props.alertWithType('error', 'Error', this.props.currencyError);
     }
   }
 
@@ -50,7 +35,7 @@ class Home extends Component {
   }
 
   handleNetworkChange = (info) => {
-    this.props.dispatch(changeNetworkStatus(info));
+    this.props.dispatch(changeNetworkStatus(info.type));
   };
 
   handleChangeText = (text) => {
@@ -81,7 +66,7 @@ class Home extends Component {
 
   handleDisconnectedPress = () => {
     this.props.alertWithType(
-      'warn',
+      'error',
       'Not connected to the internet!',
       "Just a heads up that you're not connected to the internet - some features may not work.",
     );
@@ -95,7 +80,7 @@ class Home extends Component {
 
     return (
       <Container backgroundColor={this.props.primaryColor}>
-        <StatusBar backgroundColor="blue" barStyle="light-content" />
+        <StatusBar barStyle="light-content" />
         <Header
           onPress={this.handleOptionsPress}
           isConnected={this.props.isConnected}
@@ -124,10 +109,7 @@ class Home extends Component {
             quote={this.props.quoteCurrency}
             conversionRate={this.props.conversionRate}
           />
-          <ClearButton
-            onPress={this.handleSwapCurrency}
-            text="Reverse Currencies"
-          />
+          <ClearButton onPress={this.handleSwapCurrency} text="Reverse Currencies" />
         </KeyboardAvoidingView>
       </Container>
     );
@@ -135,8 +117,7 @@ class Home extends Component {
 }
 
 const mapStateToProps = (state) => {
-  const baseCurrency = state.currencies.baseCurrency;
-  const quoteCurrency = state.currencies.quoteCurrency;
+  const { baseCurrency, quoteCurrency } = state.currencies;
   const conversionSelector = state.currencies.conversions[baseCurrency] || {};
   const rates = conversionSelector.rates || {};
 
@@ -145,9 +126,7 @@ const mapStateToProps = (state) => {
     quoteCurrency,
     amount: state.currencies.amount,
     conversionRate: rates[quoteCurrency] || 0,
-    lastConvertedDate: conversionSelector.date
-      ? new Date(conversionSelector.date)
-      : new Date(),
+    lastConvertedDate: conversionSelector.date ? new Date(conversionSelector.date) : new Date(),
     isFetching: conversionSelector.isFetching,
     primaryColor: state.theme.primaryColor,
     currencyError: state.currencies.error,
@@ -155,4 +134,10 @@ const mapStateToProps = (state) => {
   };
 };
 
-export default connect(mapStateToProps)(connectAlert(Home));
+const ConnectedHome = connect(mapStateToProps)(Home);
+
+export default props => (
+  <AlertConsumer>
+    {context => <ConnectedHome alertWithType={context.alertWithType} {...props} />}
+  </AlertConsumer>
+);

@@ -1,6 +1,7 @@
-import EStyleSheet from 'react-native-extended-stylesheet';
+import { StyleSheet } from 'react-native';
+import colors from '../../config/colors';
 
-export default EStyleSheet.create({
+export default StyleSheet.create({
   container: {
     alignItems: 'center',
   },
@@ -13,7 +14,7 @@ export default EStyleSheet.create({
     marginRight: 11,
   },
   text: {
-    color: '$white',
+    color: colors.$white,
     fontSize: 14,
     paddingVertical: 20,
     fontWeight: '300',
