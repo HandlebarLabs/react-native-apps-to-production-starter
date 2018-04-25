@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { FlatList, StatusBar, View } from 'react-native';
 import { connect } from 'react-redux';
@@ -8,13 +7,6 @@ import currencies from '../data/currencies';
 import { changeBaseCurrency, changeQuoteCurrency } from '../actions/currencies';
 
 class CurrencyList extends Component {
-  static propTypes = {
-    navigation: PropTypes.object,
-    dispatch: PropTypes.func,
-    baseCurrency: PropTypes.string,
-    quoteCurrency: PropTypes.string,
-  };
-
   handlePress = (currency) => {
     const { type } = this.props.navigation.state.params;
     if (type === 'base') {
@@ -34,7 +26,7 @@ class CurrencyList extends Component {
 
     return (
       <View style={{ flex: 1 }}>
-        <StatusBar translucent={false} barStyle="default" />
+        <StatusBar barStyle="default" />
         <FlatList
           data={currencies}
           renderItem={({ item }) => (
@@ -43,6 +35,7 @@ class CurrencyList extends Component {
               selected={item === comparisonCurrency}
               onPress={() => this.handlePress(item)}
               iconBackground={this.props.primaryColor}
+              iconName="checkmark"
             />
           )}
           keyExtractor={item => item}
