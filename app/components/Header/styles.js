@@ -1,4 +1,4 @@
-import { StyleSheet, Platform } from 'react-native';
+import { StyleSheet, Platform, StatusBar } from 'react-native';
 
 export default StyleSheet.create({
   container: {
@@ -9,6 +9,9 @@ export default StyleSheet.create({
     ...Platform.select({
       ios: {
         paddingTop: 20,
+      },
+      android: {
+        paddingTop: StatusBar.currentHeight,
       },
     }),
   },

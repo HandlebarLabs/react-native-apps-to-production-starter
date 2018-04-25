@@ -15,7 +15,7 @@ class Themes extends Component {
   render() {
     return (
       <ScrollView>
-        <StatusBar translucent={false} barStyle="default" />
+        <StatusBar barStyle="default" />
         <ListItem
           text="Blue"
           onPress={() => this.handlePressTheme(colors.$primaryBlue)}

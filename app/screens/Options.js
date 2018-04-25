@@ -19,7 +19,7 @@ class Options extends Component {
   render() {
     return (
       <ScrollView>
-        <StatusBar translucent={false} barStyle="default" />
+        <StatusBar barStyle="default" />
         <ListItem
           text="Themes"
           onPress={this.handlePressThemes}

@@ -53,7 +53,7 @@ class Home extends Component {
 
     return (
       <Container backgroundColor={this.props.primaryColor}>
-        <StatusBar backgroundColor="blue" barStyle="light-content" />
+        <StatusBar barStyle="light-content" />
         <Header onPress={this.handleOptionsPress} />
         <KeyboardAvoidingView behavior="padding">
           <Logo tintColor={this.props.primaryColor} />
