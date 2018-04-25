@@ -13,13 +13,15 @@ import { AlertConsumer } from '../components/Alert';
 import { changeCurrencyAmount, swapCurrency, getInitialConversion } from '../actions/currencies';
 
 class Home extends Component {
-  componentWillMount() {
+  constructor(props) {
+    super(props);
+
     this.props.dispatch(getInitialConversion());
   }
 
-  componentWillReceiveProps(nextProps) {
-    if (nextProps.currencyError && !this.props.currencyError) {
-      this.props.alertWithType('error', 'Error', nextProps.currencyError);
+  componentDidUpdate(prevProps) {
+    if (this.props.currencyError && !prevProps.currencyError) {
+      this.props.alertWithType('error', 'Error', this.props.currencyError);
     }
   }
 
