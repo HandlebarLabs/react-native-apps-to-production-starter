@@ -1,22 +1,21 @@
 import { StyleSheet } from 'react-native';
-import EStyleSheet from 'react-native-extended-stylesheet';
+import colors from '../../config/colors';
 
-export default EStyleSheet.create({
-  $underlayColor: '$border',
+export default StyleSheet.create({
   row: {
     paddingHorizontal: 20,
     paddingVertical: 16,
     justifyContent: 'space-between',
     alignItems: 'center',
     flexDirection: 'row',
-    backgroundColor: '$white',
+    backgroundColor: colors.$white,
   },
   text: {
-    color: '$darkText',
+    color: colors.$darkText,
     fontSize: 16,
   },
   separator: {
-    backgroundColor: '$border',
+    backgroundColor: colors.$border,
     height: StyleSheet.hairlineWidth,
     flex: 1,
     marginLeft: 20,
@@ -30,9 +29,10 @@ export default EStyleSheet.create({
     justifyContent: 'center',
   },
   iconVisible: {
-    backgroundColor: '$primaryBlue',
+    backgroundColor: colors.$primaryBlue,
   },
   checkIcon: {
     width: 18,
+    tintColor: colors.$white,
   },
 });
