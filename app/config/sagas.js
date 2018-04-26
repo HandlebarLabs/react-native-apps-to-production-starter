@@ -11,7 +11,7 @@ import {
 
 export const getLatestRate = currency => fetch(`http://api.fixer.io/latest?base=${currency}`);
 
-const fetchLatestConversionRates = function* (action) {
+const fetchLatestConversionRates = function* ({ currency }) {
   const { connected, hasCheckedStatus } = yield select(state => state.network);
   if (!connected && hasCheckedStatus) {
     yield put({
@@ -22,11 +22,11 @@ const fetchLatestConversionRates = function* (action) {
   }
 
   try {
-    let currency = action.currency;
-    if (currency === undefined) {
-      currency = yield select(state => state.currencies.baseCurrency);
+    let usedCurrency = currency;
+    if (usedCurrency === undefined) {
+      usedCurrency = yield select(state => state.currencies.baseCurrency);
     }
-    const response = yield call(getLatestRate, currency);
+    const response = yield call(getLatestRate, usedCurrency);
     const result = yield response.json();
     if (result.error) {
       yield put({ type: CONVERSION_ERROR, error: result.error });
