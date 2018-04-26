@@ -5,9 +5,6 @@ import { PersistGate } from 'redux-persist/es/integration/react';
 import Navigator from './config/routes';
 import { AlertProvider } from './components/Alert';
 import configureStore from './config/store';
-import buildStyles from './config/styles';
-
-buildStyles();
 
 export default class extends React.Component {
   constructor(props) {
