@@ -1,28 +1,31 @@
-import { Dimensions } from 'react-native';
-import EStyleSheet from 'react-native-extended-stylesheet';
+import { Dimensions, StyleSheet } from 'react-native';
+import colors from '../../config/colors';
 
 const imageWidth = Dimensions.get('window').width / 2;
 
-export default EStyleSheet.create({
+export const imageSizes = {
   $smallContainerSize: imageWidth / 2,
   $smallImageSize: imageWidth / 4,
   $largeContainerSize: imageWidth,
   $largeImageSize: imageWidth / 2,
+};
+
+export default StyleSheet.create({
   container: {
     alignItems: 'center',
   },
   containerImage: {
     alignItems: 'center',
     justifyContent: 'center',
-    width: '$largeContainerSize',
-    height: '$largeContainerSize',
+    width: colors.$largeContainerSize,
+    height: colors.$largeContainerSize,
   },
   logo: {
-    width: '$largeImageSize',
-    tintColor: '$primaryBlue',
+    width: colors.$largeImageSize,
+    tintColor: colors.$primaryBlue,
   },
   text: {
-    color: '$white',
+    color: colors.$white,
     fontSize: 28,
     letterSpacing: -0.5,
     marginTop: 15,
