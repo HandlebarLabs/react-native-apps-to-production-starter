@@ -60,7 +60,6 @@ export default (state = initialState, action) => {
     case CONVERSION_RESULT:
       return {
         ...state,
-        baseCurrency: action.result.base,
         conversions: {
           ...state.conversions,
           [action.result.base]: {
