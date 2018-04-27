@@ -1,10 +1,11 @@
-import EStyleSheet from 'react-native-extended-stylesheet';
+import { StyleSheet } from 'react-native';
+import colors from '../../config/colors';
 
-export default EStyleSheet.create({
+export default StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '$primaryBlue',
+    backgroundColor: colors.$primaryBlue,
   },
 });
