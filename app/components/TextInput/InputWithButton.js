@@ -1,15 +1,8 @@
-import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-import {
-  View,
-  TextInput,
-  TouchableHighlight,
-  Text,
-  Animated,
-} from 'react-native';
-import color from 'color';
+import { View, TextInput, TouchableHighlight, Text, Animated } from 'react-native';
 
-import styles from './styles';
+import styles, { $inputBackgroundBase, $inputBackgroundAlt } from './styles';
+import colors from '../../config/colors';
 
 class InputWithButton extends Component {
   constructor(props) {
@@ -33,16 +26,12 @@ class InputWithButton extends Component {
   }
 
   render() {
-    const underlayColor = color(styles.$buttonBackgroundColorBase).darken(
-      styles.$buttonBackgroundColorModifier,
-    );
-
     const containerStyles = [styles.container];
     if (this.props.editable === false) {
       containerStyles.push({
         backgroundColor: this.backgroundColor.interpolate({
           inputRange: [0, 1],
-          outputRange: [styles.$inputBackgroundBase, styles.$inputBackgroundAlt],
+          outputRange: [$inputBackgroundBase, $inputBackgroundAlt],
         }),
       });
     }
@@ -57,29 +46,15 @@ class InputWithButton extends Component {
         <TouchableHighlight
           onPress={this.props.onPress}
           style={styles.buttonContainer}
-          underlayColor={underlayColor}
+          underlayColor={colors.$lightGray}
         >
-          <Text style={buttonStyles}>
-            {this.props.buttonText}
-          </Text>
+          <Text style={buttonStyles}>{this.props.buttonText}</Text>
         </TouchableHighlight>
         <View style={styles.separator} />
-        <TextInput
-          style={styles.input}
-          underlineColorAndroid="transparent"
-          {...this.props}
-        />
+        <TextInput style={styles.input} underlineColorAndroid="transparent" {...this.props} />
       </Animated.View>
     );
   }
 }
-
-InputWithButton.propTypes = {
-  onPress: PropTypes.func,
-  buttonText: PropTypes.string,
-  editable: PropTypes.bool,
-  textColor: PropTypes.string,
-  value: PropTypes.string,
-};
 
 export default InputWithButton;
