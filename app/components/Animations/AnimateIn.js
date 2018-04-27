@@ -1,17 +1,9 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import { Animated, Dimensions } from 'react-native';
 
 const WINDOW_DIMENSIONS = Dimensions.get('window');
 
 class AnimateIn extends Component {
-  static propTypes = {
-    children: PropTypes.any,
-    delay: PropTypes.number,
-    duration: PropTypes.number,
-    type: PropTypes.oneOf(['fromBottom', 'fromTop', 'fadeIn']),
-  };
-
   constructor(props) {
     super(props);
 
