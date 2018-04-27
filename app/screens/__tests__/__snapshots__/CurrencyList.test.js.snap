@@ -8,17 +8,17 @@ ShallowWrapper {
     baseCurrency="USD"
     dispatch={[Function]}
     navigation={
-        Object {
-            "state": Object {
-              "params": Object {
-                "type": "quote",
-              },
-            },
-          }
+      Object {
+        "state": Object {
+          "params": Object {
+            "type": "quote",
+          },
+        },
+      }
     }
     primaryColor="red"
     quoteCurrency="GBP"
-/>,
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -28,7 +28,7 @@ ShallowWrapper {
   },
   Symbol(enzyme.__node__): Object {
     "instance": null,
-    "key": null,
+    "key": undefined,
     "nodeType": "class",
     "props": Object {
       "children": Array [
@@ -36,45 +36,44 @@ ShallowWrapper {
           animated={false}
           barStyle="default"
           showHideTransition="fade"
-          translucent={false}
-/>,
+        />,
         <FlatList
           ItemSeparatorComponent={[Function]}
           data={
-                    Array [
-                              "AUD",
-                              "BGN",
-                              "BRL",
-                              "CAD",
-                              "CHF",
-                              "CNY",
-                              "CZK",
-                              "DKK",
-                              "EUR",
-                              "GBP",
-                              "HKD",
-                              "HRK",
-                              "HUF",
-                              "IDR",
-                              "ILS",
-                              "INR",
-                              "JPY",
-                              "KRW",
-                              "MXN",
-                              "MYR",
-                              "NOK",
-                              "NZD",
-                              "PHP",
-                              "PLN",
-                              "RON",
-                              "RUB",
-                              "SEK",
-                              "SGD",
-                              "THB",
-                              "TRY",
-                              "USD",
-                              "ZAR",
-                            ]
+            Array [
+              "AUD",
+              "BGN",
+              "BRL",
+              "CAD",
+              "CHF",
+              "CNY",
+              "CZK",
+              "DKK",
+              "EUR",
+              "GBP",
+              "HKD",
+              "HRK",
+              "HUF",
+              "IDR",
+              "ILS",
+              "INR",
+              "JPY",
+              "KRW",
+              "MXN",
+              "MYR",
+              "NOK",
+              "NZD",
+              "PHP",
+              "PLN",
+              "RON",
+              "RUB",
+              "SEK",
+              "SGD",
+              "THB",
+              "TRY",
+              "USD",
+              "ZAR",
+            ]
           }
           disableVirtualization={false}
           horizontal={false}
@@ -87,7 +86,7 @@ ShallowWrapper {
           scrollEventThrottle={50}
           updateCellsBatchingPeriod={50}
           windowSize={21}
-/>,
+        />,
       ],
       "style": Object {
         "flex": 1,
@@ -97,13 +96,12 @@ ShallowWrapper {
     "rendered": Array [
       Object {
         "instance": null,
-        "key": null,
+        "key": undefined,
         "nodeType": "class",
         "props": Object {
           "animated": false,
           "barStyle": "default",
           "showHideTransition": "fade",
-          "translucent": false,
         },
         "ref": null,
         "rendered": null,
@@ -111,7 +109,7 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": null,
+        "key": undefined,
         "nodeType": "class",
         "props": Object {
           "ItemSeparatorComponent": [Function],
@@ -171,7 +169,7 @@ ShallowWrapper {
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
-      "key": null,
+      "key": undefined,
       "nodeType": "class",
       "props": Object {
         "children": Array [
@@ -179,45 +177,44 @@ ShallowWrapper {
             animated={false}
             barStyle="default"
             showHideTransition="fade"
-            translucent={false}
-/>,
+          />,
           <FlatList
             ItemSeparatorComponent={[Function]}
             data={
-                        Array [
-                                    "AUD",
-                                    "BGN",
-                                    "BRL",
-                                    "CAD",
-                                    "CHF",
-                                    "CNY",
-                                    "CZK",
-                                    "DKK",
-                                    "EUR",
-                                    "GBP",
-                                    "HKD",
-                                    "HRK",
-                                    "HUF",
-                                    "IDR",
-                                    "ILS",
-                                    "INR",
-                                    "JPY",
-                                    "KRW",
-                                    "MXN",
-                                    "MYR",
-                                    "NOK",
-                                    "NZD",
-                                    "PHP",
-                                    "PLN",
-                                    "RON",
-                                    "RUB",
-                                    "SEK",
-                                    "SGD",
-                                    "THB",
-                                    "TRY",
-                                    "USD",
-                                    "ZAR",
-                                  ]
+              Array [
+                "AUD",
+                "BGN",
+                "BRL",
+                "CAD",
+                "CHF",
+                "CNY",
+                "CZK",
+                "DKK",
+                "EUR",
+                "GBP",
+                "HKD",
+                "HRK",
+                "HUF",
+                "IDR",
+                "ILS",
+                "INR",
+                "JPY",
+                "KRW",
+                "MXN",
+                "MYR",
+                "NOK",
+                "NZD",
+                "PHP",
+                "PLN",
+                "RON",
+                "RUB",
+                "SEK",
+                "SGD",
+                "THB",
+                "TRY",
+                "USD",
+                "ZAR",
+              ]
             }
             disableVirtualization={false}
             horizontal={false}
@@ -230,7 +227,7 @@ ShallowWrapper {
             scrollEventThrottle={50}
             updateCellsBatchingPeriod={50}
             windowSize={21}
-/>,
+          />,
         ],
         "style": Object {
           "flex": 1,
@@ -240,13 +237,12 @@ ShallowWrapper {
       "rendered": Array [
         Object {
           "instance": null,
-          "key": null,
+          "key": undefined,
           "nodeType": "class",
           "props": Object {
             "animated": false,
             "barStyle": "default",
             "showHideTransition": "fade",
-            "translucent": false,
           },
           "ref": null,
           "rendered": null,
@@ -254,7 +250,7 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": null,
+          "key": undefined,
           "nodeType": "class",
           "props": Object {
             "ItemSeparatorComponent": [Function],

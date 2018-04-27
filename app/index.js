@@ -7,9 +7,6 @@ import codePush from 'react-native-code-push';
 import Navigator from './config/routes';
 import { AlertProvider } from './components/Alert';
 import configureStore from './config/store';
-import buildStyles from './config/styles';
-
-buildStyles();
 
 class App extends React.Component {
   constructor(props) {
