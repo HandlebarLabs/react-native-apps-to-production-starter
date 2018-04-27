@@ -5,13 +5,7 @@ import { TouchableOpacity } from 'react-native';
 import { shallow } from 'enzyme';
 import sinon from 'sinon';
 
-import buildStyles from '../../config/styles';
-
 import { ClearButton, styles } from '../Button';
-
-beforeAll(() => {
-  buildStyles();
-});
 
 it('renders successfully', () => {
   const rendered = renderer.create(<ClearButton />).toJSON();
