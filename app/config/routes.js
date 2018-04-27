@@ -1,4 +1,3 @@
-import { StatusBar } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 
 import Home from '../screens/Home';
