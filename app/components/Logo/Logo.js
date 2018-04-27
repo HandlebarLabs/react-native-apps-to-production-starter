@@ -1,22 +1,17 @@
-import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { View, Text, Keyboard, Animated, Platform, StyleSheet } from 'react-native';
 
-import styles from './styles';
+import styles, { imageSizes } from './styles';
 
 const ANIMATION_DURATION = 250;
 
 class Logo extends Component {
-  static propTypes = {
-    tintColor: PropTypes.string,
-  };
-
   constructor(props) {
     super(props);
 
     this.state = {
-      containerImageWidth: new Animated.Value(styles.$largeContainerSize),
-      imageWidth: new Animated.Value(styles.$largeImageSize),
+      containerImageWidth: new Animated.Value(imageSizes.$largeContainerSize),
+      imageWidth: new Animated.Value(imageSizes.$largeImageSize),
     };
   }
 
@@ -40,11 +35,11 @@ class Logo extends Component {
   keyboardWillShow = () => {
     Animated.parallel([
       Animated.timing(this.state.containerImageWidth, {
-        toValue: styles.$smallContainerSize,
+        toValue: imageSizes.$smallContainerSize,
         duration: ANIMATION_DURATION,
       }),
       Animated.timing(this.state.imageWidth, {
-        toValue: styles.$smallImageSize,
+        toValue: imageSizes.$smallImageSize,
         duration: ANIMATION_DURATION,
       }),
     ]).start();
@@ -53,11 +48,11 @@ class Logo extends Component {
   keyboardWillHide = () => {
     Animated.parallel([
       Animated.timing(this.state.containerImageWidth, {
-        toValue: styles.$largeContainerSize,
+        toValue: imageSizes.$largeContainerSize,
         duration: ANIMATION_DURATION,
       }),
       Animated.timing(this.state.imageWidth, {
-        toValue: styles.$largeImageSize,
+        toValue: imageSizes.$largeImageSize,
         duration: ANIMATION_DURATION,
       }),
     ]).start();

@@ -7,6 +7,7 @@ exports[`renders custom text pass via props 1`] = `
   accessibilityTraits={undefined}
   accessible={true}
   collapsable={undefined}
+  hasTVPreferredFocus={undefined}
   hitSlop={undefined}
   isTVSelectable={true}
   nativeID={undefined}
@@ -47,7 +48,6 @@ exports[`renders custom text pass via props 1`] = `
     <Text
       accessible={true}
       allowFontScaling={true}
-      disabled={false}
       ellipsizeMode="tail"
       style={
         Object {
