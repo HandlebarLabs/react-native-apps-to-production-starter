@@ -3,7 +3,6 @@ import renderer from 'react-test-renderer';
 import 'react-dom';
 import { TouchableOpacity } from 'react-native';
 import { shallow } from 'enzyme';
-import sinon from 'sinon';
 
 import { ClearButton, styles } from '../Button';
 
@@ -22,7 +21,7 @@ it('renders custom text pass via props', () => {
 });
 
 it('handles a press', () => {
-  const callback = sinon.spy();
+  const callback = jest.fn();
   const wrapper = shallow(<ClearButton text="test 1" onPress={callback} />);
 
   expect(wrapper.find(TouchableOpacity).length).toBe(1);
@@ -32,5 +31,5 @@ it('handles a press', () => {
     .props()
     .onPress();
 
-  expect(callback.called).toBe(true);
+  expect(callback.mock.calls.length).toBe(1);
 });

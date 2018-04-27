@@ -16,8 +16,7 @@
     "prettier-eslint": "^8.8.1",
     "react-dom": "^16.1.1",
     "react-native-scripts": "^1.13.2",
-    "react-test-renderer": "^16.3.2",
-    "sinon": "^4.0.0"
+    "react-test-renderer": "^16.3.2"
   },
   "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
   "scripts": {
@@ -26,15 +25,19 @@
     "android": "react-native-scripts android",
     "ios": "react-native-scripts ios",
     "test": "node_modules/.bin/jest",
-    "test:coverage":
-    "node node_modules/.bin/jest --coverage && open coverage/lcov-report/index.html",
+    "test:coverage": "node node_modules/.bin/jest --coverage && open coverage/lcov-report/index.html",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
   "jest": {
     "preset": "jest-expo",
-    "collectCoverageFrom": ["app/*.js", "app/**/*.js"],
-    "setupFiles": ["./tests/setup.js"]
+    "collectCoverageFrom": [
+      "app/*.js",
+      "app/**/*.js"
+    ],
+    "setupFiles": [
+      "./tests/setup.js"
+    ]
   },
   "dependencies": {
     "expo": "^26.0.0",
