@@ -1,22 +1,32 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders children props 1`] = `
-<View
+<RCTSafeAreaView
   style={
     Array [
-      undefined,
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#4F6D7A",
+        "flex": 1,
+        "justifyContent": "center",
+      },
     ]
   }
 >
   <View />
-</View>
+</RCTSafeAreaView>
 `;
 
 exports[`uses the specified backgroundColor, if provided 1`] = `
-<View
+<RCTSafeAreaView
   style={
     Array [
-      undefined,
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#4F6D7A",
+        "flex": 1,
+        "justifyContent": "center",
+      },
       Object {
         "backgroundColor": "red",
       },
