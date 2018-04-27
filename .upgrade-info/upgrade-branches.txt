@@ -15,7 +15,6 @@ upgrade-module-3-lesson-3-setup
 upgrade-module-3-lesson-4-coverage
 upgrade-module-3-lesson-5-organizing
 upgrade-module-3-lesson-6-snapshot
-upgrade-module-3-lesson-7-build-styles
 upgrade-module-3-lesson-8-actions
 upgrade-module-3-lesson-9-reducers
 upgrade-module-3-lesson-10-interactions
