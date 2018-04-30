@@ -8,7 +8,7 @@ import {
   CONVERSION_ERROR,
 } from '../actions/currencies';
 
-export const getLatestRate = currency => fetch(`http://api.fixer.io/latest?base=${currency}`);
+export const getLatestRate = currency => fetch(`https://api.fixer.io/latest?base=${currency}`);
 
 const fetchLatestConversionRates = function* ({ currency }) {
   const { connected, hasCheckedStatus } = yield select(state => state.network);
