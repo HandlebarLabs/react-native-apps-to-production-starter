@@ -37,7 +37,11 @@ exports[`renders custom text pass via props 1`] = `
   >
     <Image
       resizeMode="contain"
-      source={1}
+      source={
+        Object {
+          "testUri": "../../../app/components/Button/images/icon.png",
+        }
+      }
       style={
         Object {
           "marginRight": 11,
