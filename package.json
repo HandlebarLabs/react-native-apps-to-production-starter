@@ -24,7 +24,6 @@
     "babel-eslint": "^8.2.3",
     "babel-jest": "22.4.3",
     "babel-preset-react-native": "4.0.0",
-    "babel-preset-react-native-stage-0": "^1.0.1",
     "enzyme": "^3.0.0",
     "enzyme-adapter-react-16": "^1.0.0",
     "eslint": "^4.19.1",
@@ -42,8 +41,6 @@
   "jest": {
     "preset": "react-native",
     "collectCoverageFrom": ["app/*.js", "app/**/*.js"],
-    "setupFiles": [
-      "./tests/setup.js"
-    ]
+    "setupFiles": ["./tests/setup.js"]
   }
 }
