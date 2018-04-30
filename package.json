@@ -15,6 +15,7 @@
   "dependencies": {
     "react": "16.3.1",
     "react-native": "0.55.3",
+    "react-native-splash-screen": "^3.0.6",
     "react-navigation": "^1.5.11",
     "react-redux": "^5.0.7",
     "redux": "^4.0.0",
@@ -42,7 +43,12 @@
   },
   "jest": {
     "preset": "react-native",
-    "collectCoverageFrom": ["app/*.js", "app/**/*.js"],
-    "setupFiles": ["./tests/setup.js"]
+    "collectCoverageFrom": [
+      "app/*.js",
+      "app/**/*.js"
+    ],
+    "setupFiles": [
+      "./tests/setup.js"
+    ]
   }
 }
