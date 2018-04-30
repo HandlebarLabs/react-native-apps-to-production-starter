@@ -20,7 +20,6 @@ upgrade-module-3-lesson-9-reducers
 upgrade-module-3-lesson-10-interactions
 upgrade-module-3-lesson-11-screens
 upgrade-module-4
-upgrade-module-4-lesson-5-ejecting
 upgrade-module-4-lesson-7-ios-icon
 upgrade-module-4-lesson-8-ios-splash
 upgrade-module-4-lesson-9-ios-prep
